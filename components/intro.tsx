@@ -7,10 +7,15 @@ import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
+import { useSectionInView } from "@/lib/hooks";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Intro() {
+  const { ref } = useSectionInView("Home", 0.5);
+
   return (
     <section
+      ref={ref}
       id="home"
       className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
@@ -44,8 +49,8 @@ export default function Intro() {
       >
         <span className="font-bold">Hi, I'm Michael.</span> I'm a{" "}
         <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">6 years</span> of experience. I have a
-        passion for creating solutions to complex problems. Take a look around!
+        <span className="font-bold">6 years</span> of experience specialized in
+        the <span className="italic">React</span> library. Take a look around!
       </motion.h1>
 
       <motion.div

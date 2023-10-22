@@ -3,14 +3,15 @@
 import { useRef } from "react";
 import Image, { StaticImageData } from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 interface ProjectProps {
-  title: string;
-  description: string;
-  imageUrl: StaticImageData | string;
-  url: string;
-  tags: string[];
-  type: string;
+  title?: string | undefined;
+  description?: string | undefined;
+  imageUrl: string | StaticImport;
+  url?: string | undefined;
+  tags?: string[] | undefined;
+  type?: string | undefined;
   srcCode?: string | undefined;
   backEndCode?: string | undefined;
 }
@@ -52,7 +53,7 @@ export default function Project({
         <div className="absolute bg-gray-300 inset-0 h-full w-full rounded-lg px-12 text-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
           <div className="flex min-h-full flex-col items-center justify-center">
             <ul className="flex flex-wrap mt-4 gap-2">
-              {tags.map((tag, index) => (
+              {tags?.map((tag, index) => (
                 <li
                   className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full"
                   key={index}

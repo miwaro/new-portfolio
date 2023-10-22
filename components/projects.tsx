@@ -3,18 +3,22 @@
 import React, { useState, useEffect } from "react";
 import SectionHeading from "./section-heading";
 import { projectsData } from "@/lib/data";
+import { StaticImageData } from "next/image";
+import { useSectionInView } from "@/lib/hooks";
 import Project from "./project";
-
 interface ProjectData {
   title: string;
   description: string;
-  imageUrl: string;
-  url: string;
-  tags: string[];
-  type: string;
+  imageUrl: StaticImageData;
+  url?: string;
+  tags?: string[];
+  type?: string;
+  srcCode?: string;
+  backEndCode?: string;
 }
 
 export default function Projects() {
+  const { ref } = useSectionInView("Projects", 0.5);
   const [selectedValue, setSelectedValue] =
     useState<string>("Company Projects");
   const [filteredProjects, setFilteredProjects] = useState<ProjectData[]>([]);
@@ -36,7 +40,7 @@ export default function Projects() {
   }, [selectedValue]);
 
   return (
-    <section id="projects">
+    <section ref={ref} id="projects" className="scroll-mt-28">
       <div className="flex justify-center flex-col gap-4">
         <SectionHeading>My projects</SectionHeading>
         {selectedValue === "Company Projects" ? (
