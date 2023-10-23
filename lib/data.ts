@@ -10,6 +10,11 @@ import chanceChess from "@/public/chanceChess.png";
 import theFleaZorkus from "@/public/theFleaZorkus.png";
 import songwriting from "@/public/songwriting.png";
 import invoice from "@/public/invoice (2).png";
+import { CgWorkAlt } from "react-icons/cg";
+import { FaReact } from "react-icons/fa";
+import { LuGraduationCap } from "react-icons/lu";
+import { MdLibraryBooks } from "react-icons/md";
+import { FaAppleWhole } from "react-icons/fa6";
 
 export const links = [
   {
@@ -27,6 +32,10 @@ export const links = [
   {
     name: "Skills",
     hash: "#skills",
+  },
+  {
+    name: "Experience",
+    hash: "#experience",
   },
   {
     name: "Contact",
@@ -163,4 +172,70 @@ export const skillsData = [
   "Bash",
   "MongoDB",
   "GraphQL",
+] as const;
+
+export const experiencesData = [
+  {
+    title: "Graduated from Indiana State University",
+    location: "Terre Haute, IN",
+    description: "Bachelor of Science Degree",
+    icon: React.createElement(LuGraduationCap),
+    date: "May-2012",
+  },
+  {
+    title: "Teacher in Public School system",
+    location: "Crawfordsville, IN",
+    description: "Substitute => Teacher's Assistant => Student Aid",
+    icon: React.createElement(FaAppleWhole),
+    date: "2012-2015",
+  },
+  {
+    title: "CED Greentech",
+    location: "Austin, TX",
+    description:
+      "Realizing that teaching is not something I want to do for my whole career I took a chance in the solar industry, but this was also not what I was looking for",
+    icon: React.createElement(CgWorkAlt),
+    date: "2015-2016",
+  },
+  {
+    title: "Self-taught coding journey begins!",
+    location: "Crawfordsville, Indiana (hometown)",
+    description:
+      "Moved back home and began learning to code and acquire certificates through various online resources: Team Treehouse, Codecademy, countless Udemy courses, YouTube tutorials, etc",
+    icon: React.createElement(MdLibraryBooks),
+    date: "2016-2017",
+  },
+
+  {
+    title: "Angi - Web Developer",
+    location: "Indianapolis, IN",
+    description:
+      "Landed first dev role with Angi, formerly known as Angie's List.",
+    icon: React.createElement(FaReact),
+    date: "2017 - 2019",
+  },
+  {
+    title: "Beaverton Toyota - Web Developer",
+    location: "Beaverton, OR",
+    description:
+      "Wanting to explore a bit more, I Moved out of the midwest to Portland, Oregon where I was able to find my next role with Beaverton Toyota",
+    icon: React.createElement(FaReact),
+    date: "2019 - 2021",
+  },
+  {
+    title: "Business Information Systems - Web Developer",
+    location: "Piney Flats, TN",
+    description:
+      "After a couple years in the Pacific Northwest, I was Looking to get a little closer to home, so I took a new role in Tennessee with Business Information Systems",
+    icon: React.createElement(FaReact),
+    date: "2021 - 2022",
+  },
+  {
+    title: "Charter Communications (Spectrum) - Software Developer IV",
+    location: "St Louis, MO (remote)",
+    description:
+      "I wanted to work for a larger company and work completely remotely and was able to do that with Charter and moved to Colorado at the beginning of 2023",
+    icon: React.createElement(FaReact),
+    date: "2022 - 2023",
+  },
 ] as const;
