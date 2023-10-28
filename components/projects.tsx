@@ -41,7 +41,7 @@ export default function Projects() {
 
   return (
     <section ref={ref} id="projects" className="scroll-mt-28">
-      <div className="flex justify-center flex-col gap-4">
+      <div className="flex justify-center flex-col">
         <SectionHeading>My projects</SectionHeading>
         {selectedValue === "Company Projects" ? (
           <p className="mx-auto text-xs italic text-gray-600 ">
@@ -54,7 +54,7 @@ export default function Projects() {
           <select
             value={selectedValue}
             onChange={handleSelectChange}
-            className="block w-96 bg-gray-100 border border-gray-300 text-gray-700 py-2 px-3 rounded-md shadow-sm focus:outline-none focus:ring focus:border-blue-300 focus:ring-blue-200"
+            className="block w-96 bg-gray-100 border cursor-pointer border-gray-300 text-gray-700 py-2 px-3 rounded-md shadow-sm focus:outline-none focus:ring focus:border-blue-300 focus:ring-blue-200 mt-3"
           >
             <option value="Company Projects">Company Projects</option>
             <option value="All Projects">All Projects</option>
