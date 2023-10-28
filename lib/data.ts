@@ -56,7 +56,7 @@ export const projectsData = [
   {
     title: "Business Information Systems",
     description:
-      "The main project I contributed to was called Star. Star is a React/Redux web application that provides multiple features to assist county clerks across the state of Tennessee in the handling of transactions for new license plates and vehicle registrations as well as the management of inventory.",
+      "The main project I contributed to was 'Star'. Star provides multiple features to assist county clerks across the state of Tennessee in handling transactions for license plates and vehicle registrations as well as manage inventory.",
     tags: ["React", "Redux", "Typescript", "PHP"],
     imageUrl: bis,
     type: "Company Projects",
@@ -201,7 +201,7 @@ export const experiencesData = [
     title: "Self-taught coding journey begins!",
     location: "Crawfordsville, Indiana (hometown)",
     description:
-      "Moved back home and began learning to code and acquire certificates through various online resources: Team Treehouse, Codecademy, countless Udemy courses, YouTube tutorials, etc",
+      "Moved back home and began learning to code. Acquired certificates through various online resources: Team Treehouse, Codecademy, countless Udemy courses, YouTube tutorials, etc",
     icon: React.createElement(MdLibraryBooks),
     date: "2016-2017",
   },

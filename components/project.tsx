@@ -1,9 +1,11 @@
 "use client";
 
-import { useRef } from "react";
+import { useState, useRef } from "react";
 import Image, { StaticImageData } from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
+import { FaInfoCircle } from "react-icons/fa";
+import { FaArrowRotateLeft } from "react-icons/fa6";
 
 interface ProjectProps {
   title?: string | undefined;
@@ -25,6 +27,11 @@ export default function Project({
   srcCode,
   backEndCode,
 }: ProjectProps) {
+  const [isRotated, setRotated] = useState(true);
+
+  const handleCardClick = () => {
+    setRotated(!isRotated);
+  };
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -42,15 +49,42 @@ export default function Project({
       }}
       className="group mb-3 sm:mb-8 last:mb-0"
     >
-      <section className="bg-gray-100 p-4 max-w-[42rem] h-96 border border-black/5 rounded-lg [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] transition-all duration-700 dark:text-white dark:bg-white/10">
-        <h3 className="text-xl font-semibold">{title}</h3>
+      <section
+        className="cursor-pointer bg-gray-100 p-4 max-w-[42rem] h-[26rem] border border-black/5 rounded-lg transition-all duration-700 [transform-style:preserve-3d] dark:text-white dark:bg-white/10"
+        onClick={handleCardClick}
+      >
+        <div className="flex justify-between items-center mb-4">
+          <h3 className="text-xl font-semibold">{title}</h3>
+          <button
+            type="submit"
+            className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 disabled:scale-100 dark:bg-white dark:bg-opacity-10"
+            onClick={handleCardClick}
+          >
+            <>
+              View Info <FaInfoCircle />{" "}
+            </>
+          </button>
+        </div>
+
         <Image
           src={imageUrl}
           alt="Project I worked on"
           quality={95}
-          className="sm:block top-8 -right-40 w-[28.25rem] rounded-lg shadow-2xl h-80 transition"
+          className="sm:block top-8 -right-40 w-[28.25rem] rounded-lg shadow-2xl h-80 transition hover:scale-105 duration-700"
         />
-        <div className="absolute bg-gray-300 dark:bg-gray-800 inset-0 h-full w-full rounded-lg px-12 text-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
+
+        <div
+          className={` ${
+            isRotated ? " [transform:rotateY(180deg)]" : ""
+          } absolute bg-gray-300 dark:bg-gray-800 inset-0 h-full w-full rounded-lg px-12 text-center [backface-visibility:hidden]`}
+        >
+          <button
+            type="submit"
+            className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition borderBlack dark:bg-white/10 dark:text-white/60 absolute top-5 right-5"
+            onClick={handleCardClick}
+          >
+            <FaArrowRotateLeft className="text-xs opacity-70 transition-all" />{" "}
+          </button>
           <div className="flex min-h-full flex-col items-center justify-center">
             <ul className="flex flex-wrap mt-4 gap-2">
               {tags?.map((tag, index) => (

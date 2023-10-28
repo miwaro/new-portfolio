@@ -44,7 +44,7 @@ export default function Projects() {
       <div className="flex justify-center flex-col gap-4">
         <SectionHeading>My projects</SectionHeading>
         {selectedValue === "Company Projects" ? (
-          <p className="mx-auto text-xs italic">
+          <p className="mx-auto text-xs italic text-gray-600 ">
             * Company projects are not public facing
           </p>
         ) : (
