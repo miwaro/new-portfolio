@@ -42,7 +42,7 @@ export default function Project({
       }}
       className="group mb-3 sm:mb-8 last:mb-0"
     >
-      <section className="bg-gray-100 p-4 max-w-[42rem] h-96 border border-black/5 rounded-lg [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] transition-all duration-700">
+      <section className="bg-gray-100 p-4 max-w-[42rem] h-96 border border-black/5 rounded-lg [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] transition-all duration-700 dark:text-white dark:bg-white/10">
         <h3 className="text-xl font-semibold">{title}</h3>
         <Image
           src={imageUrl}
@@ -50,19 +50,21 @@ export default function Project({
           quality={95}
           className="sm:block top-8 -right-40 w-[28.25rem] rounded-lg shadow-2xl h-80 transition"
         />
-        <div className="absolute bg-gray-300 inset-0 h-full w-full rounded-lg px-12 text-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
+        <div className="absolute bg-gray-300 dark:bg-gray-800 inset-0 h-full w-full rounded-lg px-12 text-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
           <div className="flex min-h-full flex-col items-center justify-center">
             <ul className="flex flex-wrap mt-4 gap-2">
               {tags?.map((tag, index) => (
                 <li
-                  className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full"
+                  className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
                   key={index}
                 >
                   {tag}
                 </li>
               ))}
             </ul>
-            <p className="mt-2 text-black text-xs leading-8">{description}</p>
+            <p className="mt-2 text-black text-xs leading-8 dark:text-white/70">
+              {description}
+            </p>
             <div className="flex gap-4 text-xs">
               <button className="mt-8 bg-gray-200 hover:bg-gray-600 hover:text-white transition-all duration-500 text-black font-bold py-2 px-4 rounded-full focus:scale-110 hover:scale-110 active:scale-105">
                 <a href={url} target="blank">
