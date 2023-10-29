@@ -10,6 +10,8 @@ import chanceChess from "@/public/chanceChess.png";
 import theFleaZorkus from "@/public/theFleaZorkus.png";
 import songwriting from "@/public/songwriting.png";
 import invoice from "@/public/invoice (2).png";
+import oldPortfolio from "@/public/portfolio-page.png";
+import newPortfolio from "@/public/newPortfolio.png";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
@@ -146,6 +148,24 @@ export const projectsData = [
     tags: ["React", "SCSS"],
     imageUrl: ringtones,
     srcCode: "https://github.com/miwaro/phone-phonics",
+    type: "Personal Projects",
+  },
+  {
+    title: "This Portfolio Site",
+    description:
+      "You have arrived. I wanted to learn more about new technologies and also update my portfolio site. I was able to do both with building this site.",
+    tags: ["React", "Next.JS", "TypeScript", "Tailwind"],
+    imageUrl: newPortfolio,
+    srcCode: "https://github.com/miwaro/new-portfolio",
+    type: "Personal Projects",
+  },
+  {
+    title: "Old Portfolio Site",
+    description:
+      "This is my old portfolio site. It contains most of the info you see here, but was built a long time ago with some outdated practices and tech",
+    tags: ["React", "JavaScript", "SCSS"],
+    imageUrl: oldPortfolio,
+    srcCode: "https://github.com/miwaro/my-portfolio",
     type: "Personal Projects",
   },
 ];

@@ -64,7 +64,7 @@ export default function Projects() {
         </div>
       </div>
 
-      <div className="flex flex-wrap md:w-[1000px] justify-center gap-4">
+      <div className="flex flex-wrap md:w-[1000px] justify-center gap-4 mt-8">
         {filteredProjects.map((project) => (
           <React.Fragment key={project.title}>
             <Project {...project} />

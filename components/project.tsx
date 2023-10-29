@@ -47,7 +47,7 @@ export default function Project({
         scale: scaleProgess,
         opacity: opacityProgess,
       }}
-      className="group mb-3 sm:mb-8 last:mb-0"
+      className="group"
     >
       <section
         className="cursor-pointer bg-gray-100 p-4 max-w-[42rem] h-[26rem] border border-black/5 rounded-lg transition-all duration-700 [transform-style:preserve-3d] dark:text-white dark:bg-white/10"
@@ -76,7 +76,7 @@ export default function Project({
         <div
           className={` ${
             isRotated ? " [transform:rotateY(180deg)]" : ""
-          } absolute bg-gray-300 dark:bg-gray-800 inset-0 h-full w-full rounded-lg px-12 text-center [backface-visibility:hidden]`}
+          } absolute bg-gray-300 dark:bg-gray-800 inset-0 w-full rounded-lg px-12 text-center [backface-visibility:hidden]`}
         >
           <button
             type="submit"
@@ -100,11 +100,13 @@ export default function Project({
               {description}
             </p>
             <div className="flex gap-4 text-xs">
-              <button className="mt-8 bg-gray-200 hover:bg-gray-600 hover:text-white transition-all duration-500 text-black font-bold py-2 px-4 rounded-full focus:scale-110 hover:scale-110 active:scale-105">
-                <a href={url} target="blank">
-                  Explore the App
-                </a>
-              </button>
+              {url ? (
+                <button className="mt-8 bg-gray-200 hover:bg-gray-600 hover:text-white transition-all duration-500 text-black font-bold py-2 px-4 rounded-full focus:scale-110 hover:scale-110 active:scale-105">
+                  <a href={url} target="blank">
+                    Explore the App
+                  </a>
+                </button>
+              ) : null}
               {srcCode ? (
                 <button className="mt-8 bg-gray-200 hover:bg-gray-600 hover:text-white transition-all duration-500 text-black font-bold py-2 px-4 rounded-full focus:scale-110 hover:scale-110 active:scale-105">
                   <a href={srcCode} target="blank">
