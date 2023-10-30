@@ -12,6 +12,7 @@ import songwriting from "@/public/songwriting.png";
 import invoice from "@/public/invoice (2).png";
 import oldPortfolio from "@/public/portfolio-page.png";
 import newPortfolio from "@/public/newPortfolio.png";
+import wordvark from "@/public/wordvark.png";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
@@ -166,6 +167,16 @@ export const projectsData = [
     tags: ["React", "JavaScript", "SCSS"],
     imageUrl: oldPortfolio,
     srcCode: "https://github.com/miwaro/my-portfolio",
+    type: "Personal Projects",
+  },
+  {
+    title: "Wordvark",
+    description:
+      "This is a word game web app I created. You start with two letters and attempt to extend the word as many times as you can for points.",
+    tags: ["React", "JavaScript", "CSS"],
+    imageUrl: wordvark,
+    srcCode: "https://github.com/miwaro/wordvark",
+    url: "https://miwaro.github.io/wordvark/",
     type: "Personal Projects",
   },
 ];
