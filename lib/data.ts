@@ -13,6 +13,7 @@ import invoice from "@/public/invoice (2).png";
 import oldPortfolio from "@/public/portfolio-page.png";
 import newPortfolio from "@/public/newPortfolio.png";
 import wordvark from "@/public/wordvark.png";
+import deftones from "@/public/deftones.png";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
@@ -178,6 +179,16 @@ export const projectsData = [
     srcCode: "https://github.com/miwaro/wordvark",
     url: "https://miwaro.github.io/wordvark/",
     type: "Personal Projects",
+  },
+  {
+    title: "Deftones Live",
+    description:
+      "This app allows you to search, sort, and filter through thousands of Deftones live shows. AWS has been used to implement a sign in page, but this has not been deployed and the site is still under construction.",
+    tags: ["React", "Redux", "AWS Amplify"],
+    imageUrl: deftones,
+    srcCode: "https://github.com/artslop/deftoneslive",
+    url: "https://main.d7yvy6xnw6s8e.amplifyapp.com/",
+    type: "Freelance Projects",
   },
 ];
 
