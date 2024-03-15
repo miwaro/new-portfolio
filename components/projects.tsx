@@ -19,8 +19,7 @@ interface ProjectData {
 
 export default function Projects() {
   const { ref } = useSectionInView("Projects", 0.5);
-  const [selectedValue, setSelectedValue] =
-    useState<string>("Company Projects");
+  const [selectedValue, setSelectedValue] = useState<string>("All Projects");
   const [filteredProjects, setFilteredProjects] = useState<ProjectData[]>([]);
 
   const handleSelectChange = (event: any) => {

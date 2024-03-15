@@ -14,6 +14,7 @@ import oldPortfolio from "@/public/portfolio-page.png";
 import newPortfolio from "@/public/newPortfolio.png";
 import wordvark from "@/public/wordvark.png";
 import deftones from "@/public/deftones.png";
+import suffix from "@/public/suffix-screenshot.png";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
@@ -56,6 +57,25 @@ export const projectsData = [
     imageUrl: charter,
     type: "Company Projects",
     url: "https://corporate.charter.com/",
+  },
+  {
+    title: "Suffix",
+    description:
+      "Suffix is a full stack word game application with authentication and a serverless database. There are a myriad of features including a leaderboard that allows you to filter leaders for various periods of time. You can select Spanish as an alternative language and even select your level of difficulty. A ton of work went into creating and designing this app, so definitely check this one out.",
+    tags: [
+      "Next.js",
+      "React",
+      "Zustand",
+      "Clerk",
+      "Xata",
+      "Tailwind",
+      "Framer-Motion",
+      "Merriam-Webster's API",
+    ],
+    imageUrl: suffix,
+    url: "https://next-suffix.vercel.app/",
+    srcCode: "https://github.com/miwaro/next-suffix",
+    type: "Personal Projects",
   },
   {
     title: "Business Information Systems",
