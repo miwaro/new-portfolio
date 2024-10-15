@@ -50,7 +50,7 @@ export default function Intro() {
       >
         <span className="font-bold">Hi, I&apos;m Michael.</span> I&apos;m a{" "}
         <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">6 years</span> of experience specialized in
+        <span className="font-bold">7 years</span> of experience specialized in
         the <span className="italic">React</span> library. Take a look around!
       </motion.h1>
 

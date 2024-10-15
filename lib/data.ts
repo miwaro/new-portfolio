@@ -1,4 +1,5 @@
 import React from "react";
+import bidMax from "@/public/bidMax.png";
 import angi from "@/public/Angi.png";
 import beaverton from "@/public/Beaverton.png";
 import bis from "@/public/BIS.png";
@@ -50,18 +51,17 @@ export const links = [
 
 export const projectsData = [
   {
-    title: "Charter Communications",
+    title: "Coconut Tree Software Inc.",
     description:
-      "FMS and Helios. FMS provides multiple features to assist sales support in managing “fallouts”, issues that need to be resolved to complete orders. Helios is an internal testing harness for the Charter ordering services. It allows developers, business analysts, and QA testers to validate the successful and failure cases for the various ordering scenarios of the different clients.",
-    tags: ["React", "Context API", "MUI"],
-    imageUrl: charter,
+      "BidMax is a real estate application that allows users to view, buy, and sell properties. As the lead developer, I initiated the project as well as many of the core features.",
+    tags: ["React", "Context API", "MUI", "Tailwind"],
+    imageUrl: bidMax,
     type: "Company Projects",
-    url: "https://corporate.charter.com/",
   },
   {
     title: "Suffix",
     description:
-      "Suffix is a full stack word game application with authentication and a serverless database. There are a myriad of features including a leaderboard that allows you to filter leaders for various periods of time. You can select Spanish as an alternative language and even select your level of difficulty. A ton of work went into creating and designing this app, so definitely check this one out.",
+      "Suffix is a unique word game with authentication and a serverless database. Features include a leaderboard with time filters, language and difficulty selection, and much more. Try it out!",
     tags: [
       "Next.js",
       "React",
@@ -70,7 +70,6 @@ export const projectsData = [
       "Xata",
       "Tailwind",
       "Framer-Motion",
-      "Merriam-Webster's API",
     ],
     imageUrl: suffix,
     url: "https://next-suffix.vercel.app/",
@@ -299,5 +298,13 @@ export const experiencesData = [
       "I wanted to work for a larger company and work completely remotely and was able to do that with Charter and moved to Colorado at the beginning of 2023",
     icon: React.createElement(FaReact),
     date: "2022 - 2023",
+  },
+  {
+    title: "Coconut Tree Software Inc.",
+    location: "(remote)",
+    description:
+      "Working for this company gave me a chance to be a leader and handle the initiation of a new project which gave me invaluable experience as a software developer.",
+    icon: React.createElement(FaReact),
+    date: "2024",
   },
 ] as const;

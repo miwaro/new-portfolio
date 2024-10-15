@@ -35,10 +35,9 @@ export default function About() {
         <span className="italic">Aside from coding,</span> I enjoy playing
         chess, and have even started teaching a class. I play classical guitar
         and produce music with a small studio of equipment I have accumulated
-        over the years. I moved to <span className="font-medium">Colorado</span>{" "}
-        earlier this year and have really enjoyed exploring some of the amazing
-        natural beauty here. I also picked up mountain biking, bouldering, and I
-        can&apos;t forget to mention my favorite video game, Zelda.
+        over the years. I just moved to{" "}
+        <span className="font-medium">Philadelphia</span> and I am really
+        excited to explore the area and its rich history.
       </p>
     </motion.section>
   );
