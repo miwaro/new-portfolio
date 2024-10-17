@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 
 import SectionHeading from "./section-heading";
@@ -17,27 +18,20 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a degree in
-        <span> Physical Education</span>, I eventually realized I wanted to
-        pursue something different, something that would really challenge me and
-        enable me to utilize my problem solving skills in a creative way. So, I
-        began my journey of learning how to code! My core stack is {""}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB. {""}
-        </span>
-        I am always looking to learn new technologies which is part of the
-        reason I rebuilt my portfolio site. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        After earning my degree in Physical Education, I soon realized I wanted
+        to pursue a different path—one that would challenge me and allow me to
+        apply my problem-solving skills creatively. That’s when I started my
+        coding journey! My primary stack includes React, Next.js, Node.js, and
+        MongoDB. I'm passionate about learning new technologies, which led me to
+        rebuild my portfolio site from scratch. Currently, I'm seeking a
+        full-time role as a software developer.
       </p>
 
       <p>
-        <span className="italic">Aside from coding,</span> I enjoy playing
-        chess, and have even started teaching a class. I play classical guitar
-        and produce music with a small studio of equipment I have accumulated
-        over the years. I just moved to{" "}
-        <span className="font-medium">Philadelphia</span> and I am really
-        excited to explore the area and its rich history.
+        Beyond coding, I enjoy chess and recently taught a class. I also play
+        classical guitar and produce music with a home studio I've built over
+        the years. Recently, I just relocated to Philadelphia, and I'm excited
+        to explore the city and immerse myself in its rich history.
       </p>
     </motion.section>
   );

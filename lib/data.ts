@@ -59,6 +59,15 @@ export const projectsData = [
     type: "Company Projects",
   },
   {
+    title: "Charter Communications",
+    description:
+      "Projects: FMS, Helios - FMS provides multiple features to assist sales support in managing “fallouts”, issues that need to be resolved to complete orders. Helios is an internal testing harness for the Charter ordering services. It allows developers, business analysts, and QA testers to validate the successful and failure cases for the various ordering scenarios of the different clients.",
+    tags: ["React", "Context API", "MUI"],
+    imageUrl: charter,
+    type: "Company Projects",
+    url: "https://corporate.charter.com/",
+  },
+  {
     title: "Suffix",
     description:
       "Suffix is a unique word game with authentication and a serverless database. Features include a leaderboard with time filters, language and difficulty selection, and much more. Try it out!",
@@ -117,7 +126,7 @@ export const projectsData = [
   {
     title: "The Flea Zorkus",
     description:
-      "This web app features artist, Ken Zell, an industrial artist based out of Portland, Oregon. The site features categories containing photographs of his work, videos, and a contact form.",
+      "This web app features Ken Zell, an industrial artist, based out of Portland, Oregon. The site features categories containing photographs of his work, videos, and a contact form.",
     tags: ["WordPress", "CSS"],
     imageUrl: theFleaZorkus,
     url: "https://thefleazorkus.com/",
@@ -183,7 +192,7 @@ export const projectsData = [
   {
     title: "Old Portfolio Site",
     description:
-      "This is my old portfolio site. It contains most of the info you see here, but was built a long time ago with some outdated practices and tech",
+      "This is my old portfolio site. It contains most of the info you see here, but uses some tech and practices that are now considered outdated.",
     tags: ["React", "JavaScript", "SCSS"],
     imageUrl: oldPortfolio,
     srcCode: "https://github.com/miwaro/my-portfolio",
@@ -192,7 +201,7 @@ export const projectsData = [
   {
     title: "Wordvark",
     description:
-      "This is a word game web app I created. You start with two letters and attempt to extend the word as many times as you can for points.",
+      "This is another word game I created. You start with two letters and attempt to extend the word as many times as you can for points.",
     tags: ["React", "JavaScript", "CSS"],
     imageUrl: wordvark,
     srcCode: "https://github.com/miwaro/wordvark",

@@ -18,7 +18,7 @@ interface ProjectData {
 }
 
 export default function Projects() {
-  const { ref } = useSectionInView("Projects", 0.5);
+  const { ref } = useSectionInView("Projects", 0.2);
   const [selectedValue, setSelectedValue] = useState<string>("All Projects");
   const [filteredProjects, setFilteredProjects] = useState<ProjectData[]>([]);
 
