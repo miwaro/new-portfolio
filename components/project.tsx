@@ -70,7 +70,7 @@ export default function Project({
           src={imageUrl}
           alt="Project I worked on"
           quality={95}
-          className="sm:block top-8 -right-40 w-[28.25rem] rounded-lg shadow-2xl h-80 transition hover:scale-105 duration-700"
+          className="sm:block top-8 -right-40 w-[28.25rem] rounded-lg shadow-2xl h-80 transition hover:scale-105 duration-700 object-cover"
         />
 
         <div

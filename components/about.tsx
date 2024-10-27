@@ -21,9 +21,9 @@ export default function About() {
         After earning my degree in Physical Education, I soon realized I wanted
         to pursue a different path—one that would challenge me and allow me to
         apply my problem-solving skills creatively. That’s when I started my
-        coding journey! My primary stack includes React, Next.js, Node.js, and
-        MongoDB. I'm passionate about learning new technologies, which led me to
-        rebuild my portfolio site from scratch. Currently, I'm seeking a
+        coding journey! My primary stack includes React.js, Next.js, Node.js,
+        and MongoDB. I'm passionate about learning new technologies, which led
+        me to rebuild my portfolio site from scratch. Currently, I'm seeking a
         full-time role as a software developer.
       </p>
 

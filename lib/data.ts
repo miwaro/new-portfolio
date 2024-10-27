@@ -10,8 +10,6 @@ import ringtones from "@/public/ringtones.png";
 import chanceChess from "@/public/chanceChess.png";
 import theFleaZorkus from "@/public/theFleaZorkus.png";
 import songwriting from "@/public/songwriting.png";
-import invoice from "@/public/invoice (2).png";
-import oldPortfolio from "@/public/portfolio-page.png";
 import newPortfolio from "@/public/newPortfolio.png";
 import wordvark from "@/public/wordvark.png";
 import deftones from "@/public/deftones.png";
@@ -38,10 +36,6 @@ export const links = [
   {
     name: "Skills",
     hash: "#skills",
-  },
-  {
-    name: "Experience",
-    hash: "#experience",
   },
   {
     name: "Contact",
@@ -143,21 +137,12 @@ export const projectsData = [
     type: "Freelance Projects",
   },
   {
-    title: "Invoice Generator",
-    description:
-      "Here is a prototype that I constructed for a client launching a small business geared toward helping freelance developers. Users can create an invoice and generate a printable PDF. The app includes a wide array of options including the ability to calculate discounts and taxes. Additionally, the user can customize the theme as well as append notes to the document.",
-    tags: ["React", "Redux"],
-    imageUrl: invoice,
-    srcCode: "https://github.com/miwaro/invoice-generator",
-    type: "Freelance Projects",
-  },
-  {
     title: "Chance Chess",
     description:
       "This is an online multiplayer chess game I invented where moves are determined by cards drawn from a deck. (Each card correlates with a piece on the board). It includes a fully customized deck with sound and animation.",
     tags: ["React", "Redux", "WebSocket API", "Chess.JS"],
     imageUrl: chanceChess,
-    url: "https://miwaro.github.io/",
+    url: "https://miwaro.github.io/chance-chess/",
     srcCode: "https://github.com/miwaro/chance-chess",
     type: "Personal Projects",
   },
@@ -190,15 +175,6 @@ export const projectsData = [
     type: "Personal Projects",
   },
   {
-    title: "Old Portfolio Site",
-    description:
-      "This is my old portfolio site. It contains most of the info you see here, but uses some tech and practices that are now considered outdated.",
-    tags: ["React", "JavaScript", "SCSS"],
-    imageUrl: oldPortfolio,
-    srcCode: "https://github.com/miwaro/my-portfolio",
-    type: "Personal Projects",
-  },
-  {
     title: "Wordvark",
     description:
       "This is another word game I created. You start with two letters and attempt to extend the word as many times as you can for points.",
@@ -212,7 +188,7 @@ export const projectsData = [
     title: "Deftones Live",
     description:
       "This app allows you to search, sort, and filter through thousands of Deftones live shows. AWS has been used to implement a sign in page, but this has not been deployed and the site is still under construction.",
-    tags: ["React", "Redux", "AWS Amplify"],
+    tags: ["React", "Redux Toolkit", "AWS Amplify"],
     imageUrl: deftones,
     srcCode: "https://github.com/artslop/deftoneslive",
     url: "https://main.d7yvy6xnw6s8e.amplifyapp.com/",
