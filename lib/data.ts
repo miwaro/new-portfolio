@@ -12,6 +12,7 @@ import theFleaZorkus from "@/public/theFleaZorkus.png";
 import songwriting from "@/public/songwriting.png";
 import newPortfolio from "@/public/newPortfolio.png";
 import wordvark from "@/public/wordvark.png";
+import LoopList from "@/public/loop-list.png";
 import deftones from "@/public/deftones.png";
 import suffix from "@/public/suffix-screenshot.png";
 import { CgWorkAlt } from "react-icons/cg";
@@ -137,16 +138,6 @@ export const projectsData = [
     type: "Freelance Projects",
   },
   {
-    title: "Chance Chess",
-    description:
-      "This is an online multiplayer chess game I invented where moves are determined by cards drawn from a deck. (Each card correlates with a piece on the board). It includes a fully customized deck with sound and animation.",
-    tags: ["React", "Redux", "WebSocket API", "Chess.JS"],
-    imageUrl: chanceChess,
-    url: "https://miwaro.github.io/chance-chess/",
-    srcCode: "https://github.com/miwaro/chance-chess",
-    type: "Personal Projects",
-  },
-  {
     title: "Cricket Tracker",
     description:
       "Cricket-Tracker is a web app that tracks up to 6 players or teams scores in Cricket, a popular version of darts.",
@@ -155,6 +146,26 @@ export const projectsData = [
     type: "Personal Projects",
     url: "https://miwaro.github.io/cricket-tracker/",
     srcCode: "https://github.com/miwaro/cricket-tracker",
+  },
+  {
+    title: "Loop-List",
+    description:
+      "This app allows you to not only create notes for each loop for each track for each song for multiple setlists, but you can also upload documents like tablature, lyrics, or even a video of yourself playing whatever instrument you play so you will always have a reference of what you played.",
+    tags: ["React", "Typescript", "Tailwind"],
+    imageUrl: LoopList,
+    srcCode: "https://github.com/miwaro/loop-manager",
+    url: "https://loop-list.vercel.app/",
+    type: "Personal Projects",
+  },
+  {
+    title: "Chance Chess",
+    description:
+      "This is an online multiplayer chess game I invented where moves are determined by cards drawn from a deck. (Each card correlates with a piece on the board). It includes a fully customized deck with sound and animation.",
+    tags: ["React", "Redux", "WebSocket API", "Chess.JS"],
+    imageUrl: chanceChess,
+    url: "https://miwaro.github.io/chance-chess/",
+    srcCode: "https://github.com/miwaro/chance-chess",
+    type: "Personal Projects",
   },
   {
     title: "Phone Phonics",
