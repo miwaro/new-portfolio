@@ -12,7 +12,7 @@ import theFleaZorkus from "@/public/theFleaZorkus.png";
 import songwriting from "@/public/songwriting.png";
 import newPortfolio from "@/public/newPortfolio.png";
 import wordvark from "@/public/wordvark.png";
-import loopList from "@/public/loop-list.png";
+import loopList from "@/public/loopList.png";
 import deftones from "@/public/deftones.png";
 import suffix from "@/public/suffix-screenshot.png";
 import { CgWorkAlt } from "react-icons/cg";
