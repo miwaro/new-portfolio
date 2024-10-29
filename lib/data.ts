@@ -12,7 +12,7 @@ import theFleaZorkus from "@/public/theFleaZorkus.png";
 import songwriting from "@/public/songwriting.png";
 import newPortfolio from "@/public/newPortfolio.png";
 import wordvark from "@/public/wordvark.png";
-import LoopList from "@/public/loop-list.png";
+import loopList from "@/public/loop-list.png";
 import deftones from "@/public/deftones.png";
 import suffix from "@/public/suffix-screenshot.png";
 import { CgWorkAlt } from "react-icons/cg";
@@ -152,7 +152,7 @@ export const projectsData = [
     description:
       "This app allows you to not only create notes for each loop for each track for each song for multiple setlists, but you can also upload documents like tablature, lyrics, or even a video of yourself playing whatever instrument you play so you will always have a reference of what you played.",
     tags: ["React", "Typescript", "Tailwind"],
-    imageUrl: LoopList,
+    imageUrl: loopList,
     srcCode: "https://github.com/miwaro/loop-manager",
     url: "https://loop-list.vercel.app/",
     type: "Personal Projects",
