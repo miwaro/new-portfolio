@@ -1,6 +1,5 @@
 import React from "react";
 import bidMax from "@/public/bidMax.png";
-import angi from "@/public/Angi.png";
 import beaverton from "@/public/Beaverton.png";
 import bis from "@/public/BIS.png";
 import charter from "@/public/charter.png";
@@ -10,16 +9,10 @@ import ringtones from "@/public/ringtones.png";
 import chanceChess from "@/public/chanceChess.png";
 import theFleaZorkus from "@/public/theFleaZorkus.png";
 import songwriting from "@/public/songwriting.png";
-import newPortfolio from "@/public/newPortfolio.png";
 import wordvark from "@/public/wordvark.png";
 import loopList from "@/public/loopList.png";
 import deftones from "@/public/deftones.png";
 import suffix from "@/public/suffix-screenshot.png";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
-import { MdLibraryBooks } from "react-icons/md";
-import { FaAppleWhole } from "react-icons/fa6";
 
 export const links = [
   {
@@ -84,7 +77,7 @@ export const projectsData = [
     title: "Business Information Systems",
     description:
       "The main project I contributed to was 'Star'. Star provides multiple features to assist county clerks across the state of Tennessee in handling transactions for license plates and vehicle registrations as well as manage inventory.",
-    tags: ["React", "Redux", "Typescript", "PHP"],
+    tags: ["Vue", "Vuex", "Typescript", "PHP"],
     imageUrl: bis,
     type: "Company Projects",
     url: "https://www.bisonline.com/",
@@ -96,15 +89,6 @@ export const projectsData = [
     tags: ["React", "Redux", "HTML", "CSS", "Javascript"],
     imageUrl: beaverton,
     url: "https://www.beavertontoyota.com/",
-    type: "Company Projects",
-  },
-  {
-    title: "Angi",
-    description:
-      "This is a web application where service providers can manage jobs for their customers by adding notes, communicate with clients via a chat service, as well as post progress pictures.",
-    tags: ["React", "Redux", "HTML", "CSS", "Javascript"],
-    imageUrl: angi,
-    url: "https://www.angi.com/",
     type: "Company Projects",
   },
   {
@@ -128,16 +112,6 @@ export const projectsData = [
     type: "Freelance Projects",
   },
   {
-    title: "Songwriting-Inspirationator",
-    description:
-      "I collaborated with a colleague of mine on this really unique React project. It gives songwriters a wide array of options to enhance their approach to songwriting. Specific features I developed include mapping chord extensions, tooltip labeling, and SCSS styles.",
-    tags: ["React", "SCSS"],
-    imageUrl: songwriting,
-    url: "https://www.songwriting-inspirationator.com/#/progressionator",
-    srcCode: "https://github.com/alextotheroh/songwriting-inspirationator",
-    type: "Freelance Projects",
-  },
-  {
     title: "Cricket Tracker",
     description:
       "Cricket-Tracker is a web app that tracks up to 6 players or teams scores in Cricket, a popular version of darts.",
@@ -146,6 +120,16 @@ export const projectsData = [
     type: "Personal Projects",
     url: "https://miwaro.github.io/cricket-tracker/",
     srcCode: "https://github.com/miwaro/cricket-tracker",
+  },
+  {
+    title: "Songwriting-Inspirationator",
+    description:
+      "I collaborated with a colleague of mine on this really unique React project. It gives songwriters a wide array of options to enhance their approach to songwriting. Specific features I developed include mapping chord extensions, tooltip labeling, and SCSS styles.",
+    tags: ["React", "SCSS"],
+    imageUrl: songwriting,
+    url: "https://www.songwriting-inspirationator.com/#/progressionator",
+    srcCode: "https://github.com/alextotheroh/songwriting-inspirationator",
+    type: "Freelance Projects",
   },
   {
     title: "Loop-List",
@@ -177,15 +161,6 @@ export const projectsData = [
     type: "Personal Projects",
   },
   {
-    title: "This Portfolio Site",
-    description:
-      "You have arrived. I wanted to learn more about new technologies and also update my portfolio site. I was able to do both with building this site.",
-    tags: ["React", "Next.JS", "TypeScript", "Tailwind"],
-    imageUrl: newPortfolio,
-    srcCode: "https://github.com/miwaro/new-portfolio",
-    type: "Personal Projects",
-  },
-  {
     title: "Wordvark",
     description:
       "This is another word game I created. You start with two letters and attempt to extend the word as many times as you can for points.",
@@ -214,6 +189,8 @@ export const skillsData = [
   "TypeScript",
   "React",
   "Redux",
+  "Vue",
+  "Vuex",
   "Next.js",
   "Node.js",
   "Express",
@@ -228,79 +205,4 @@ export const skillsData = [
   "Babel",
   "Bash",
   "MongoDB",
-  "GraphQL",
-] as const;
-
-export const experiencesData = [
-  {
-    title: "Graduated from Indiana State University",
-    location: "Terre Haute, IN",
-    description: "Bachelor of Science Degree",
-    icon: React.createElement(LuGraduationCap),
-    date: "May-2012",
-  },
-  {
-    title: "Teacher in Public School system",
-    location: "Crawfordsville, IN",
-    description: "Substitute => Teacher's Assistant => Student Aid",
-    icon: React.createElement(FaAppleWhole),
-    date: "2012-2015",
-  },
-  {
-    title: "CED Greentech",
-    location: "Austin, TX",
-    description:
-      "Realizing that teaching is not something I want to do for my whole career I took a chance in the solar industry, but this was also not what I was looking for",
-    icon: React.createElement(CgWorkAlt),
-    date: "2015-2016",
-  },
-  {
-    title: "Self-taught coding journey begins!",
-    location: "Crawfordsville, Indiana (hometown)",
-    description:
-      "Moved back home and began learning to code. Acquired certificates through various online resources: Team Treehouse, Codecademy, countless Udemy courses, YouTube tutorials, etc",
-    icon: React.createElement(MdLibraryBooks),
-    date: "2016-2017",
-  },
-
-  {
-    title: "Angi - Web Developer",
-    location: "Indianapolis, IN",
-    description:
-      "Landed first dev role with Angi, formerly known as Angie's List.",
-    icon: React.createElement(FaReact),
-    date: "2017 - 2019",
-  },
-  {
-    title: "Beaverton Toyota - Web Developer",
-    location: "Beaverton, OR",
-    description:
-      "Wanting to explore a bit more, I Moved out of the midwest to Portland, Oregon where I was able to find my next role with Beaverton Toyota",
-    icon: React.createElement(FaReact),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Business Information Systems - Web Developer",
-    location: "Piney Flats, TN",
-    description:
-      "After a couple years in the Pacific Northwest, I was Looking to get a little closer to home, so I took a new role in Tennessee with Business Information Systems",
-    icon: React.createElement(FaReact),
-    date: "2021 - 2022",
-  },
-  {
-    title: "Charter Communications (Spectrum) - Software Developer IV",
-    location: "St Louis, MO (remote)",
-    description:
-      "I wanted to work for a larger company and work completely remotely and was able to do that with Charter and moved to Colorado at the beginning of 2023",
-    icon: React.createElement(FaReact),
-    date: "2022 - 2023",
-  },
-  {
-    title: "Coconut Tree Software Inc.",
-    location: "(remote)",
-    description:
-      "Working for this company gave me a chance to be a leader and handle the initiation of a new project which gave me invaluable experience as a software developer.",
-    icon: React.createElement(FaReact),
-    date: "2024",
-  },
 ] as const;

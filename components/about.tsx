@@ -18,13 +18,12 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After earning my degree in Physical Education, I soon realized I wanted
-        to pursue a different path—one that would challenge me and allow me to
-        apply my problem-solving skills creatively. That’s when I started my
-        coding journey! My primary stack includes React.js, Next.js, Node.js,
-        and MongoDB. I'm passionate about learning new technologies, which led
-        me to rebuild my portfolio site from scratch. Currently, I'm seeking a
-        full-time role as a software developer.
+        I'm a software developer, but I am first and foremost a creator. I love
+        being able to solve real-world problems in a creative way and that is
+        why I am passionate about software development. I am always looking for
+        new ways to challenge myself and grow as a developer which is why I
+        rebuilt this portfolio site. Currently, I'm seeking a full-time role as
+        a software developer.
       </p>
 
       <p>
