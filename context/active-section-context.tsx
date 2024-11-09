@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import type { SectionName } from "@/lib/types";
 import React, { useState, createContext, useContext } from "react";
 
@@ -22,6 +23,14 @@ export default function ActiveSectionContextProvider({
 }: ActiveSectionContextProviderProps) {
   const [activeSection, setActiveSection] = useState<SectionName>("Home");
   const [timeOfLastClick, setTimeOfLastClick] = useState(0);
+
+  useEffect(() => {
+    setActiveSection("Home");
+    const homeElement = document.getElementById("home");
+    if (homeElement) {
+      homeElement.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
 
   return (
     <ActiveSectionContext.Provider

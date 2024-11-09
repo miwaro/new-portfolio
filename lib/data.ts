@@ -105,8 +105,8 @@ export const projectsData = [
   {
     title: "The Flea Zorkus",
     description:
-      "This web app features Ken Zell, an industrial artist, based out of Portland, Oregon. The site features categories containing photographs of his work, videos, and a contact form.",
-    tags: ["WordPress", "CSS"],
+      "This web app features Ken Zell, an industrial artist, based out of Portland, Oregon. The site displays his art and multiple features including a contact and testimonial form.",
+    tags: ["WordPress", "PHP", "CSS"],
     imageUrl: theFleaZorkus,
     url: "https://thefleazorkus.com/",
     type: "Freelance Projects",
@@ -114,7 +114,7 @@ export const projectsData = [
   {
     title: "Cricket Tracker",
     description:
-      "Cricket-Tracker is a web app that tracks up to 6 players or teams scores in Cricket, a popular version of darts.",
+      "Cricket-Tracker is a stylish web app that tracks up to 6 players or teams scores in Cricket, a popular version of darts. I plan on converting this to a mobile app with React Native at some point in the future.",
     tags: ["React", "Redux", "SCSS"],
     imageUrl: cricketTracker,
     type: "Personal Projects",
@@ -125,7 +125,7 @@ export const projectsData = [
     title: "Songwriting-Inspirationator",
     description:
       "I collaborated with a colleague of mine on this really unique React project. It gives songwriters a wide array of options to enhance their approach to songwriting. Specific features I developed include mapping chord extensions, tooltip labeling, and SCSS styles.",
-    tags: ["React", "SCSS"],
+    tags: ["React", "Redux", "SCSS"],
     imageUrl: songwriting,
     url: "https://www.songwriting-inspirationator.com/#/progressionator",
     srcCode: "https://github.com/alextotheroh/songwriting-inspirationator",
@@ -144,7 +144,7 @@ export const projectsData = [
   {
     title: "Chance Chess",
     description:
-      "This is an online multiplayer chess game I invented where moves are determined by cards drawn from a deck. (Each card correlates with a piece on the board). It includes a fully customized deck with sound and animation.",
+      "I am currently rebuilding this application due to the chess library no longer being maintained, package deprecations, and general architectural issues. However, this is an online multiplayer chess game I invented where moves are determined by drawing from a deck of cards",
     tags: ["React", "Redux", "WebSocket API", "Chess.JS"],
     imageUrl: chanceChess,
     url: "https://miwaro.github.io/chance-chess/",

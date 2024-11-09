@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { links } from "@/lib/data";
 import Link from "next/link";
@@ -10,6 +10,18 @@ import { useActiveSectionContext } from "@/context/active-section-context";
 export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      if (window.location.hash !== "#home") {
+        window.history.replaceState(
+          null,
+          "",
+          `${window.location.pathname}#home`
+        );
+      }
+    }
+  }, []);
 
   return (
     <header className="z-[999] relative">
