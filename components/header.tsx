@@ -14,11 +14,7 @@ export default function Header() {
   useEffect(() => {
     if (typeof window !== "undefined") {
       if (window.location.hash !== "#home") {
-        window.history.replaceState(
-          null,
-          "",
-          `${window.location.pathname}#home`
-        );
+        window.history.replaceState(null, "", `${window.location.pathname}`);
       }
     }
   }, []);

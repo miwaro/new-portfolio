@@ -17,20 +17,28 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
-      <p className="mb-3">
-        I'm a software developer, but I am first and foremost a creator. I love
-        being able to solve real-world problems in a creative way and that is
-        why I am passionate about software development. I am always looking for
-        new ways to challenge myself and grow as a developer which is why I
-        rebuilt this portfolio site. Currently, I'm seeking a full-time role as
-        a software developer.
+      <p className="mb-2">
+        I am a software developer, but above all, I am a creator. I thrive on
+        solving real-world problems through creative solutions, which fuels my
+        passion for software development. Continuously seeking new challenges
+        and opportunities for growth, I recently rebuilt this portfolio to
+        reflect my evolving skills, particularly with React, Next.js, and
+        TypeScript.
       </p>
+      <hr />
 
-      <p>
+      <p className="mb-2">
         Beyond coding, I enjoy chess and recently taught a class. I also play
         classical guitar and produce music with a home studio I've built over
         the years. Recently, I just relocated to Philadelphia, and I'm excited
         to explore the city and immerse myself in its rich history.
+      </p>
+      <hr />
+
+      <p>
+        I am currently pursuing a full-time position as a software developer so
+        feel free to reach out through the contact form at the bottom of this
+        page. Thank you for checking out my site!
       </p>
     </motion.section>
   );

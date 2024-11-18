@@ -20,31 +20,42 @@ export default function Intro() {
       id="home"
       className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
-      <div className="flex items-center justify-center">
-        <div className="relative mt-8">
-          <motion.div
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "tween",
-              duration: 0.2,
-            }}
-          >
-            <Image
-              src="/pro-profile-pic.jpg"
-              alt="Michael Rooze profile pic"
-              width="192"
-              height="192"
-              quality="95"
-              priority={true}
-              className="h-32 w-32 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
-            />
-          </motion.div>
-        </div>
+      <div
+        className="flex items-center justify-center p-3 relative"
+        style={{
+          backgroundImage: "url('/profileBg.jpg')",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "bottom",
+          borderRadius: "10px",
+          // border: "2px solid #312E81",
+          height: "190px",
+          width: "100%",
+        }}
+      >
+        <motion.div
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            type: "tween",
+            duration: 0.2,
+          }}
+          className="absolute bottom-[-30px]"
+        >
+          <Image
+            src="/pro-profile-pic.jpg"
+            alt="Michael Rooze profile pic"
+            width="160"
+            height="160"
+            quality="95"
+            priority={true}
+            className="rounded-full object-cover border-[0.25rem] shadow-xl border-indigo-950 dark:border-indigo-100"
+          />
+        </motion.div>
       </div>
 
       <motion.h1
-        className="mb-10 mt-8 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-10 mt-12 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >

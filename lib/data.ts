@@ -142,13 +142,19 @@ export const projectsData = [
     type: "Personal Projects",
   },
   {
-    title: "Chance Chess",
+    title: "Lucky Rook (Chance-Chess)",
     description:
-      "I am currently rebuilding this application due to the chess library no longer being maintained, package deprecations, and general architectural issues. However, this is an online multiplayer chess game I invented where moves are determined by drawing from a deck of cards",
-    tags: ["React", "Redux", "WebSocket API", "Chess.JS"],
+      "This is an online multiplayer chess game following a MERN stack architecture. The moves are determined by cards you draw and select. This is a rebuild of a previous app so the card aspect is still under construction.",
+    tags: [
+      "MongoDB",
+      "Express.js",
+      "React",
+      "Node.js",
+      "Redux",
+      "WebSocket API",
+    ],
     imageUrl: chanceChess,
-    url: "https://miwaro.github.io/chance-chess/",
-    srcCode: "https://github.com/miwaro/chance-chess",
+    srcCode: "https://github.com/miwaro/lucky-rook",
     type: "Personal Projects",
   },
   {
