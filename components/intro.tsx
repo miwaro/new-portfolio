@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
@@ -9,10 +9,18 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { AnimatedText } from "./helpers/animatedText";
 
 export default function Intro() {
+  const [text, setText] = useState("");
   const { ref } = useSectionInView("Home", 0.2);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+
+  useEffect(() => {
+    const introText =
+      "Hi, I'm Michael, a software developer with several years of experience specializing in the React library. Take a look around!";
+    setText(introText);
+  }, []);
 
   return (
     <section
@@ -43,7 +51,7 @@ export default function Intro() {
           className="absolute bottom-[-30px]"
         >
           <Image
-            src="/pro-profile-pic.jpg"
+            src="/newProfilePic.jpg"
             alt="Michael Rooze profile pic"
             width="160"
             height="160"
@@ -59,10 +67,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hi, I&apos;m Michael, a</span>
-        <span> software developer</span> with <span>several years</span> of
-        experience specializing in the <span className="font-bold">React</span>{" "}
-        library. Take a look around!
+        <AnimatedText text={text} key={text} />
       </motion.h1>
 
       <motion.div
