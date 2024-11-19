@@ -13,6 +13,7 @@ import wordvark from "@/public/wordvark.png";
 import loopList from "@/public/loopList.png";
 import deftones from "@/public/deftones.png";
 import suffix from "@/public/suffix-screenshot.png";
+import invoice from "@/public/Invoice.png";
 
 export const links = [
   {
@@ -165,6 +166,15 @@ export const projectsData = [
     imageUrl: ringtones,
     srcCode: "https://github.com/miwaro/phone-phonics",
     type: "Personal Projects",
+  },
+  {
+    title: "Invoice Generator",
+    description:
+      "Here is a prototype that I constructed for a client launching a small business geared toward helping freelance developers. Users can create an invoice and generate a printable PDF. The app includes a wide array of options including the ability to calculate discounts and taxes. Additionally, the user can customize the theme as well as append notes to the document.",
+    tags: ["React", "Redux"],
+    imageUrl: invoice,
+    srcCode: "https://github.com/miwaro/invoice-generator",
+    type: "Freelance Projects",
   },
   {
     title: "Wordvark",

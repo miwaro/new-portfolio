@@ -13,3 +13,23 @@ html {
 .vertical-timeline--animate .vertical-timeline-element-content.is-hidden {
   display: block !important;
 }
+
+@keyframes scrollBackground {
+  0% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+
+.animated-bg {
+  animation: scrollBackground 70s linear infinite;
+  background-image: url("/profileBg.jpg");
+  background-size: 200% auto;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  border-radius: 10px;
+  height: 190px;
+  width: 100%;
+}
