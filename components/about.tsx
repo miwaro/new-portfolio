@@ -35,7 +35,7 @@ export default function About() {
             duration: 0.9,
           }}
         >
-          <div className="flex gap-3">
+          <div className="flex flex-col sm:flex-row gap-3">
             <Image
               src="/yellowstone.jpg"
               alt="Michael Rooze profile pic"
