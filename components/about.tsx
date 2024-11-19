@@ -4,6 +4,7 @@
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
+import Image from "next/image";
 
 export default function About() {
   const { ref } = useSectionInView("About");
@@ -25,7 +26,37 @@ export default function About() {
         reflect my evolving skills, particularly with React, Next.js, and
         TypeScript.
       </p>
-      <hr />
+      <div className="flex items-center justify-center p-3 relative">
+        <motion.div
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            type: "tween",
+            duration: 0.9,
+          }}
+        >
+          <div className="flex gap-3">
+            <Image
+              src="/yellowstone.jpg"
+              alt="Michael Rooze profile pic"
+              width="300"
+              height="200"
+              quality="95"
+              priority={true}
+              className="object-cover border-[0.25rem] shadow-xl border-indigo-950 dark:border-indigo-100"
+            />
+            <Image
+              src="/hikingProfilePic.jpg"
+              alt="Michael Rooze profile pic"
+              width="300"
+              height="200"
+              quality="95"
+              priority={true}
+              className="object-cover border-[0.25rem] shadow-xl border-indigo-950 dark:border-indigo-100"
+            />
+          </div>
+        </motion.div>
+      </div>
 
       <p className="mb-2">
         Beyond coding, I enjoy chess and recently taught a class. I also play
