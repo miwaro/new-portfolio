@@ -1,5 +1,5 @@
 import React from "react";
-import bidMax from "@/public/bidMax-2.png";
+import bidMax from "@/public/bidMax.png";
 import beaverton from "@/public/Beaverton.png";
 import bis from "@/public/BIS.png";
 import charter from "@/public/charter.png";
