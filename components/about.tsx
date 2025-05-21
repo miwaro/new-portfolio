@@ -19,12 +19,11 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-2">
-        I am a software developer, but above all, I am a creator. I thrive on
-        solving real-world problems through creative solutions, which fuels my
-        passion for software development. Continuously seeking new challenges
-        and opportunities for growth, I recently rebuilt this portfolio to
-        reflect my evolving skills, particularly with React, Next.js, and
-        TypeScript.
+        I am a software engineer, but I think of myself as more of a creator. I
+        love the process of transforming ideas into reality. Whether I am
+        coding, playing guitar, or a game of chess, it is always fascinating to
+        me to analyze the endless paths to success. I find the process to be
+        just as fulfilling, if not more so, than the end result.
       </p>
       <div className="flex items-center justify-center p-3 relative">
         <motion.div
@@ -35,9 +34,9 @@ export default function About() {
             duration: 0.9,
           }}
         >
-          <div className="flex flex-col sm:flex-row gap-3">
+          <div className="flex flex-col sm:flex-row gap-8">
             <Image
-              src="/yellowstone.jpg"
+              src="/hikingProfilePic.jpg"
               alt="Michael Rooze profile pic"
               width="300"
               height="200"
@@ -46,7 +45,7 @@ export default function About() {
               className="object-cover border-[0.25rem] shadow-xl border-indigo-950 dark:border-indigo-100"
             />
             <Image
-              src="/hikingProfilePic.jpg"
+              src="/yellowstone.jpg"
               alt="Michael Rooze profile pic"
               width="300"
               height="200"
@@ -57,19 +56,11 @@ export default function About() {
           </div>
         </motion.div>
       </div>
-
-      <p className="mb-2">
-        Beyond coding, I enjoy chess and recently taught a class. I also play
-        classical guitar and produce music with a home studio I've built over
-        the years. Recently, I just relocated to Philadelphia, and I'm excited
-        to explore the city and immerse myself in its rich history.
-      </p>
-      <hr />
-
-      <p>
-        I am currently pursuing a full-time position as a software developer so
-        feel free to reach out through the contact form at the bottom of this
-        page. Thank you for checking out my site!
+      <p className="mt-2">
+        My girlfriend and I recently moved from Denver to Philadelphia, and it
+        has been great to explore the city. If you have any questions or want to
+        connect, send me a message through the contact form at the bottom of
+        this page. Talk to you soon!
       </p>
     </motion.section>
   );

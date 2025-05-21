@@ -1,5 +1,5 @@
 import React from "react";
-import bidMax from "@/public/bidMax.png";
+import bidMax from "@/public/bidMax-2.png";
 import beaverton from "@/public/Beaverton.png";
 import bis from "@/public/BIS.png";
 import charter from "@/public/charter.png";
@@ -14,6 +14,7 @@ import loopList from "@/public/loopList.png";
 import deftones from "@/public/deftones.png";
 import suffix from "@/public/suffix-screenshot.png";
 import invoice from "@/public/Invoice.png";
+import lunarCow from "@/public/lunarCow.png";
 
 export const links = [
   {
@@ -40,12 +41,22 @@ export const links = [
 
 export const projectsData = [
   {
+    title: "Lunar Cow Publishing",
+    description:
+      "At Lunar Cow, I design and implement new features for both the employee and client portals, leveraging Next.js for frontend development and Supabase for backend services and data management.",
+    tags: ["Next.js, Supabase, AWS"],
+    imageUrl: lunarCow,
+    type: "Company Projects",
+    url: "https://employees.lunarcow.com/",
+  },
+  {
     title: "Coconut Tree Software Inc.",
     description:
       "BidMax is a real estate application that allows users to view, buy, and sell properties. As the lead developer, I initiated the project as well as many of the core features.",
     tags: ["React", "Context API", "MUI", "Tailwind"],
     imageUrl: bidMax,
     type: "Company Projects",
+    url: "https://www.bidmax.com/",
   },
   {
     title: "Charter Communications",
@@ -101,7 +112,6 @@ export const projectsData = [
     type: "Freelance Projects",
     srcCode: "https://github.com/miwaro/knecht-insurance",
     backEndCode: "https://github.com/miwaro/emailer-api",
-    url: "https://www.knechtinsurance.com/",
   },
   {
     title: "The Flea Zorkus",
@@ -179,7 +189,7 @@ export const projectsData = [
   {
     title: "Wordvark",
     description:
-      "This is another word game I created. You start with two letters and attempt to extend the word as many times as you can for points.",
+      "This is very simple word game I created. You start with two letters and attempt to extend the word as many times as you can for points.",
     tags: ["React", "JavaScript", "CSS"],
     imageUrl: wordvark,
     srcCode: "https://github.com/miwaro/wordvark",
@@ -205,8 +215,6 @@ export const skillsData = [
   "TypeScript",
   "React",
   "Redux",
-  "Vue",
-  "Vuex",
   "Next.js",
   "Node.js",
   "Express",
@@ -221,4 +229,5 @@ export const skillsData = [
   "Babel",
   "Bash",
   "MongoDB",
+  "Supabase",
 ] as const;

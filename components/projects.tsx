@@ -45,7 +45,7 @@ export default function Projects() {
         <SectionHeading>My projects</SectionHeading>
         {selectedValue === "Company Projects" ? (
           <p className="mx-auto text-s text-gray-400 ">
-            * Company projects are not public facing
+            * Most company projects are not public facing
           </p>
         ) : (
           ""

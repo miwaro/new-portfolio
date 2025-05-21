@@ -31,10 +31,10 @@ export default function ContactForm() {
     >
       <SectionHeading>Contact me</SectionHeading>
 
-      <p className="text-gray-700 -mt-2 text-xs">
+      <p className="text-gray-500 -mt-2 text-xs">
         Please contact me directly at{" "}
         <a className="underline" href="mailto:mikerooze12@gmail.com">
-          mikerooze12@gmail.com
+          mrooze12@gmail.com
         </a>{" "}
         or through this form.
       </p>

@@ -18,7 +18,7 @@ export default function Intro() {
 
   useEffect(() => {
     const introText =
-      "Hi, I'm Michael, a software developer with several years of experience specializing in the React library. Take a look around!";
+      "Hi, I'm Michael, a software engineer with 6+ years of experience specializing in the React library. Take a look around!";
     setText(introText);
   }, []);
 
