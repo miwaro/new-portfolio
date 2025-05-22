@@ -1,42 +1,9 @@
-import React from "react";
-import bidMax from "@/public/bidMax.png";
-import beaverton from "@/public/Beaverton.png";
-import bis from "@/public/BIS.png";
-import charter from "@/public/charter.png";
-import knecht from "@/public/knecht-insurance.png";
-import cricketTracker from "@/public/cricketTracker.png";
-import ringtones from "@/public/ringtones.png";
-import chanceChess from "@/public/chanceChess.png";
-import theFleaZorkus from "@/public/theFleaZorkus.png";
-import songwriting from "@/public/songwriting.png";
-import wordvark from "@/public/wordvark.png";
-import loopList from "@/public/loopList.png";
-import deftones from "@/public/deftones.png";
-import suffix from "@/public/suffix-screenshot.png";
-import invoice from "@/public/Invoice.png";
-import lunarCow from "@/public/lunarCow.png";
-
 export const links = [
-  {
-    name: "Home",
-    hash: "#home",
-  },
-  {
-    name: "About",
-    hash: "#about",
-  },
-  {
-    name: "Projects",
-    hash: "#projects",
-  },
-  {
-    name: "Skills",
-    hash: "#skills",
-  },
-  {
-    name: "Contact",
-    hash: "#contact",
-  },
+  { name: "Home", hash: "#home" },
+  { name: "About", hash: "#about" },
+  { name: "Projects", hash: "#projects" },
+  { name: "Skills", hash: "#skills" },
+  { name: "Contact", hash: "#contact" },
 ] as const;
 
 export const projectsData = [
@@ -45,7 +12,7 @@ export const projectsData = [
     description:
       "At Lunar Cow, I design and implement new features for both the employee and client portals, leveraging Next.js for frontend development and Supabase for backend services and data management.",
     tags: ["Next.js, Supabase, AWS"],
-    imageUrl: lunarCow,
+    imageUrl: "/lunarCow.png",
     type: "Company Projects",
     url: "https://employees.lunarcow.com/",
   },
@@ -54,7 +21,7 @@ export const projectsData = [
     description:
       "BidMax is a real estate application that allows users to view, buy, and sell properties. As the lead developer, I initiated the project as well as many of the core features.",
     tags: ["React", "Context API", "MUI", "Tailwind"],
-    imageUrl: bidMax,
+    imageUrl: "/bidMax.png",
     type: "Company Projects",
     url: "https://www.bidmax.com/",
   },
@@ -63,7 +30,7 @@ export const projectsData = [
     description:
       "Projects: FMS, Helios - FMS provides multiple features to assist sales support in managing “fallouts”, issues that need to be resolved to complete orders. Helios is an internal testing harness for the Charter ordering services. It allows developers, business analysts, and QA testers to validate the successful and failure cases for the various ordering scenarios of the different clients.",
     tags: ["React", "Context API", "MUI"],
-    imageUrl: charter,
+    imageUrl: "/charter.png",
     type: "Company Projects",
     url: "https://corporate.charter.com/",
   },
@@ -80,7 +47,7 @@ export const projectsData = [
       "Tailwind",
       "Framer-Motion",
     ],
-    imageUrl: suffix,
+    imageUrl: "/suffix-screenshot.png",
     url: "https://next-suffix.vercel.app/",
     srcCode: "https://github.com/miwaro/next-suffix",
     type: "Personal Projects",
@@ -90,7 +57,7 @@ export const projectsData = [
     description:
       "The main project I contributed to was 'Star'. Star provides multiple features to assist county clerks across the state of Tennessee in handling transactions for license plates and vehicle registrations as well as manage inventory.",
     tags: ["Vue", "Vuex", "Typescript", "PHP"],
-    imageUrl: bis,
+    imageUrl: "/BIS.png",
     type: "Company Projects",
     url: "https://www.bisonline.com/",
   },
@@ -99,7 +66,7 @@ export const projectsData = [
     description:
       "This app provides multiple features and tools for handling the management of car sales in the automotive retail industry, including a virtual showroom, a feature that allowed a customer to view details about each car.",
     tags: ["React", "Redux", "HTML", "CSS", "Javascript"],
-    imageUrl: beaverton,
+    imageUrl: "/Beaverton.png",
     url: "https://www.beavertontoyota.com/",
     type: "Company Projects",
   },
@@ -108,7 +75,7 @@ export const projectsData = [
     description:
       "This is a modern website I built for an insurance broker. The client requested the inclusion of a customer contact form to enable prospective customers to request a service quote. The backend seamlessly integrates with Sendinblue API and Google's reCaptcha security service has also been implemented.",
     tags: ["HTML", "CSS", "Javascript", "NodeJS", "Express"],
-    imageUrl: knecht,
+    imageUrl: "/knecht-insurance.png",
     type: "Freelance Projects",
     srcCode: "https://github.com/miwaro/knecht-insurance",
     backEndCode: "https://github.com/miwaro/emailer-api",
@@ -118,7 +85,7 @@ export const projectsData = [
     description:
       "This web app features Ken Zell, an industrial artist, based out of Portland, Oregon. The site displays his art and multiple features including a contact and testimonial form.",
     tags: ["WordPress", "PHP", "CSS"],
-    imageUrl: theFleaZorkus,
+    imageUrl: "/theFleaZorkus.png",
     url: "https://thefleazorkus.com/",
     type: "Freelance Projects",
   },
@@ -127,7 +94,7 @@ export const projectsData = [
     description:
       "Cricket-Tracker is a stylish web app that tracks up to 6 players or teams scores in Cricket, a popular version of darts. I plan on converting this to a mobile app with React Native at some point in the future.",
     tags: ["React", "Redux", "SCSS"],
-    imageUrl: cricketTracker,
+    imageUrl: "/cricketTracker.png",
     type: "Personal Projects",
     url: "https://miwaro.github.io/cricket-tracker/",
     srcCode: "https://github.com/miwaro/cricket-tracker",
@@ -137,7 +104,7 @@ export const projectsData = [
     description:
       "I collaborated with a colleague of mine on this really unique React project. It gives songwriters a wide array of options to enhance their approach to songwriting. Specific features I developed include mapping chord extensions, tooltip labeling, and SCSS styles.",
     tags: ["React", "Redux", "SCSS"],
-    imageUrl: songwriting,
+    imageUrl: "/songwriting.png",
     url: "https://www.songwriting-inspirationator.com/#/progressionator",
     srcCode: "https://github.com/alextotheroh/songwriting-inspirationator",
     type: "Freelance Projects",
@@ -147,7 +114,7 @@ export const projectsData = [
     description:
       "This app allows you to not only create notes for each loop for each track for each song for multiple setlists, but you can also upload documents like tablature, lyrics, or even a video of yourself playing whatever instrument you play so you will always have a reference of what you played.",
     tags: ["React", "Typescript", "Tailwind"],
-    imageUrl: loopList,
+    imageUrl: "/loopList.png",
     srcCode: "https://github.com/miwaro/loop-manager",
     url: "https://loop-list.vercel.app/",
     type: "Personal Projects",
@@ -164,7 +131,7 @@ export const projectsData = [
       "Redux",
       "WebSocket API",
     ],
-    imageUrl: chanceChess,
+    imageUrl: "/chanceChess.png",
     srcCode: "https://github.com/miwaro/lucky-rook",
     type: "Personal Projects",
   },
@@ -173,7 +140,7 @@ export const projectsData = [
     description:
       "I created Phone Phonics as a website hub to download free ringtones and text tones. The website currently features tracks produced by myself and my peers, with the capability to expand its library globally.",
     tags: ["React", "SCSS"],
-    imageUrl: ringtones,
+    imageUrl: "/ringtones.png",
     srcCode: "https://github.com/miwaro/phone-phonics",
     type: "Personal Projects",
   },
@@ -182,7 +149,7 @@ export const projectsData = [
     description:
       "Here is a prototype that I constructed for a client launching a small business geared toward helping freelance developers. Users can create an invoice and generate a printable PDF. The app includes a wide array of options including the ability to calculate discounts and taxes. Additionally, the user can customize the theme as well as append notes to the document.",
     tags: ["React", "Redux"],
-    imageUrl: invoice,
+    imageUrl: "/Invoice.png",
     srcCode: "https://github.com/miwaro/invoice-generator",
     type: "Freelance Projects",
   },
@@ -191,7 +158,7 @@ export const projectsData = [
     description:
       "This is very simple word game I created. You start with two letters and attempt to extend the word as many times as you can for points.",
     tags: ["React", "JavaScript", "CSS"],
-    imageUrl: wordvark,
+    imageUrl: "/wordvark.png",
     srcCode: "https://github.com/miwaro/wordvark",
     url: "https://miwaro.github.io/wordvark/",
     type: "Personal Projects",
@@ -201,7 +168,7 @@ export const projectsData = [
     description:
       "This app allows you to search, sort, and filter through thousands of Deftones live shows. AWS has been used to implement a sign in page, but this has not been deployed and the site is still under construction.",
     tags: ["React", "Redux Toolkit", "AWS Amplify"],
-    imageUrl: deftones,
+    imageUrl: "/deftones.png",
     srcCode: "https://github.com/artslop/deftoneslive",
     url: "https://main.d7yvy6xnw6s8e.amplifyapp.com/",
     type: "Freelance Projects",
