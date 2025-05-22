@@ -3,13 +3,12 @@
 import React, { useState, useEffect } from "react";
 import SectionHeading from "./section-heading";
 import { projectsData } from "@/lib/data";
-import { StaticImageData } from "next/image";
 import { useSectionInView } from "@/lib/hooks";
 import Project from "./project";
 interface ProjectData {
   title: string;
   description: string;
-  imageUrl: StaticImageData;
+  imageUrl: string;
   url?: string;
   tags?: string[];
   type?: string;
