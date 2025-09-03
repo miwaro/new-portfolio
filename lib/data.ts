@@ -12,9 +12,8 @@ export const projectsData = [
     description:
       "At Lunar Cow, I design and implement new features for both the employee and client portals, leveraging Next.js for frontend development and Supabase for backend services and data management.",
     tags: ["Next.js, Supabase, AWS"],
-    imageUrl: "/lunarCow.png",
+    imageUrl: "/lunarCow.PNG",
     type: "Company Projects",
-    url: "https://employees.lunarcow.com/",
   },
   {
     title: "Coconut Tree Software Inc.",
