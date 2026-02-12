@@ -61,15 +61,6 @@ export const projectsData = [
     url: "https://www.bisonline.com/",
   },
   {
-    title: "Beaverton Toyota",
-    description:
-      "This app provides multiple features and tools for handling the management of car sales in the automotive retail industry, including a virtual showroom, a feature that allowed a customer to view details about each car.",
-    tags: ["React", "Redux", "HTML", "CSS", "Javascript"],
-    imageUrl: "/Beaverton.png",
-    url: "https://www.beavertontoyota.com/",
-    type: "Company Projects",
-  },
-  {
     title: "Knecht Insurance",
     description:
       "This is a modern website I built for an insurance broker. The client requested the inclusion of a customer contact form to enable prospective customers to request a service quote. The backend seamlessly integrates with Sendinblue API and Google's reCaptcha security service has also been implemented.",
@@ -165,7 +156,7 @@ export const projectsData = [
   {
     title: "Deftones Live",
     description:
-      "This app allows you to search, sort, and filter through thousands of Deftones live shows. AWS has been used to implement a sign in page, but this has not been deployed and the site is still under construction.",
+      "This app allows you to search, sort, and filter through thousands of Deftones live shows.",
     tags: ["React", "Redux Toolkit", "AWS Amplify"],
     imageUrl: "/deftones.png",
     srcCode: "https://github.com/artslop/deftoneslive",
